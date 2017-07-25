@@ -1,0 +1,43 @@
+.btn{
+	display: block;
+	margin: 0 auto;
+	padding: 10px 10px;
+	min-width: 193px;
+	max-width: 253px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	font-size: @size18;
+	font-weight: normal;
+	line-height: 1em;
+	text-align: center;
+	background-color: @white;
+	color: @color-braun;
+	cursor: pointer;
+
+	@media(min-width: 800px){
+		width: 100%;
+	}
+
+	&:hover{
+		background-color: darken(@white, 10%);
+	}
+}
+
+.btn_orange{
+	background-color: @color-orange;
+	color: @white;
+
+	&:hover{
+		background-color: darken(@color-orange, 10%);
+	}
+}
+
+.btn_blue{
+	background-color: @color-dark-blue;
+	color: @white;
+
+	&:hover{
+		background-color: darken(@color-dark-blue, 10%);
+	}
+}

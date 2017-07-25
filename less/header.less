@@ -1,0 +1,126 @@
+header{
+	padding-top: 20px;
+
+	@media(min-width: @width-size){
+		.clearfix();
+		background-color: @white;
+	}
+}
+
+/*===============  logo ====================*/ 
+
+.logo{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px 0;
+
+	@media(min-width: @width-size){
+		float: left;
+	}
+}
+
+/*=================== nav ======================*/ 
+
+.list__button{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 0;
+	background-color: @color-gray-blue;
+
+	@media(min-width: @width-size){
+		display: none;
+	}
+
+	& svg{
+		fill: @white;
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.header__list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+
+	@media(min-width: @width-size){
+		display: block;
+		text-align: right;
+		float: right;
+		margin-right: 15px;
+	}
+
+
+	& li{
+
+		@media(min-width: @width-size){
+			display: inline-block;
+			margin-right: -4px;
+		}
+
+		&:first-child{
+			a{
+				border-top: none;
+			}
+		}
+
+		&:last-child{
+			a{
+				border-bottom: none;
+			}
+		}
+
+
+			a{
+			display: block;
+			text-decoration: none;
+			text-align: center;
+			padding: 10px 22px;
+			font-size: @size25;	
+			color: @color-gray-light;
+			background-color: lighten(@color-gray-blue, 10%);
+			border-top: 1px solid @color-gray-dark;
+			border-bottom: 1px solid @color-gray-light;
+
+			@media(min-width: @width-size){
+				font-size: @size18;
+				color: @black-light;
+				background-color: transparent;
+				border: none;
+
+			}
+
+			&:hover{
+				background-color:  lighten(@color-gray-blue, 20%);
+				color: @black;
+
+				@media(min-width: @width-size){
+					background-color: transparent;
+					color: @white;
+					display: block;
+					// min-width: 193px;
+					// max-width: 253px;
+					border: none;
+					border-radius: 20px;
+					line-height: 1em;
+					background-color: @color-orange;
+					color: @white;
+				}
+			}
+		}
+	}
+}
+
+/*-------------------*/ 
+
+nav{
+	&:hover ~ .header__list{
+		display: block;
+	}
+}

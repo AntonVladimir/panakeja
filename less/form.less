@@ -1,0 +1,68 @@
+.content__mail{
+	padding: 20px 0;
+	background-color: @color-orange-light;
+
+
+	@media(min-width: @width-size){
+		background-image: url("../image/email-image.jpg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+}
+
+.mail__form{
+
+}
+
+.form__block{
+	width: 100%;
+
+	@media(min-width: @width-size){
+		width: 510px;
+		height: 46px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	input[type="mail"]{
+		margin: 0 auto;
+		margin-bottom: 10px;
+		display: block;
+		width: 70%;
+		padding: 0 5%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: @size18;
+		font-weight: normal;
+		border: none;
+		border-radius: 20px;
+		outline: none;
+
+		@media(min-width: @width-size){
+			width: 50%;
+			// height: 100%;
+			padding-right: 15%;
+			opacity: .3;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid @black;
+		}
+	}
+
+	// input[placeholder]{color: @white;}
+	// input::-webkit-input-placeholder{color: @white;} 
+	// input::-moz-placeholder{color: @white;} 
+	// input:-moz-placeholder{color: @white;}
+	// input:-ms-input-placeholder{color: @white;} 
+
+	input[type="button"]{
+		@media(min-width: @width-size){
+			width: 213px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+}
